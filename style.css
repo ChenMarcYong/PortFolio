@@ -26,9 +26,15 @@ header h1 {
     font-size: 2.5em;
 }
 
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 nav ul li {
@@ -42,13 +48,13 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Sections principales */
+/* Section accueil */
 section {
     margin: 20px 0;
 }
 
 section h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
@@ -57,19 +63,55 @@ section p {
     color: #555;
 }
 
+/* Section projets */
+.projet {
+    margin-bottom: 20px;
+}
+
+.projet h3 {
+    font-size: 2em;
+    color: #333;
+}
+
+.projet p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.projet a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.projet a:hover {
+    text-decoration: underline;
+}
+
+/* Section compétences */
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+/* Section contact */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* Pied de page */
 footer {
     text-align: center;
     margin-top: 30px;
     font-size: 1em;
     color: #777;
-}
-
-footer a {
-    color: #333;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
