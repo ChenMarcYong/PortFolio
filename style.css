@@ -1,11 +1,11 @@
-/* Reset de base pour garantir la compatibilité entre les navigateurs */
+/* Réinitialisation pour assurer la compatibilité entre navigateurs */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Style général du corps de la page */
+/* Style global pour le corps de la page */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-/* En-tête du site */
+/* En-tête */
 header {
     background-color: #333;
     color: #fff;
@@ -24,16 +24,15 @@ header {
 
 header h1 {
     font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.2em;
-    margin-top: 10px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
     margin-top: 20px;
 }
 
@@ -48,7 +47,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Section accueil */
+/* Section générale */
 section {
     margin: 20px 0;
 }
@@ -63,14 +62,177 @@ section p {
     color: #555;
 }
 
-/* Section projets */
-.projet {
+/* Profil - texte et photo */
+.info-profil {
+    text-align: center;
     margin-bottom: 20px;
+}
+
+.info-profil h2 {
+    font-size: 2em;
+    margin: 5px 0;
+    color: #333;
+}
+
+.info-profil p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.photo-profil {
+    width: 300px; /* Taille du cercle */
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.photo-profil img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Projets */
+.description-cadre {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.projets-ligne {
+    display: flex;               /* Active Flexbox */
+    flex-wrap: wrap;             /* Permet de passer à la ligne si nécessaire */
+    gap: 20px;                   /* Espace entre les projets */
+    justify-content: space-around; /* Espace équitable entre les projets */
+    margin: 20px 0;
+}
+
+/* Style de chaque projet */
+.projet-card {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(33.33% - 40px); /* Prend un tiers de la ligne avec une marge */
+    max-width: 400px;             /* Limite la largeur maximale des cartes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Titre du projet */
+.projet-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.projet-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Image dans chaque carte */
+.projet-card img {
+    width: 100%;
+    max-width: 100%; /* L'image s'ajuste à la taille du conteneur */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Effet de zoom sur l'image */
+.projet-card img:hover {
+    transform: scale(1.1);
+}
+
+/* Effet interactif sur la carte */
+.projet-card:hover {
+    transform: translateY(-5px); /* Soulève légèrement la carte */
+}
+
+.texte-description {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image-description {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.image-description img {
+    width: 100%;       /* L'image s'adapte au conteneur */
+    max-width: 750px;  /* Taille maximale */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+}
+
+.image-description img:hover {
+    transform: scale(1.1); /* Zoom léger */
+}
+
+.description-verticale {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    text-align: center; /* Centre le texte */
+}
+
+.description-verticale h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description-verticale p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.description-verticale .image-description img {
+    width: 100%;
+    max-width: 750px; /* Limite la taille maximale de l'image */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.description-verticale .image-description img:hover {
+    transform: scale(1.1); /* Zoom léger */
+}
+
+/* Projet individuel */
+.projet img {
+    width: 100%;
+    max-width: 750px; /* Limite la taille maximale de l'image */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.projet img:hover {
+    transform: scale(1.1);
 }
 
 .projet h3 {
     font-size: 2em;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .projet p {
@@ -87,7 +249,7 @@ section p {
     text-decoration: underline;
 }
 
-/* Section compétences */
+/* Compétences */
 ul {
     list-style: none;
     margin-top: 10px;
@@ -98,7 +260,7 @@ ul li {
     margin-bottom: 5px;
 }
 
-/* Section contact */
+/* Liens */
 a {
     color: #3498db;
     text-decoration: none;
@@ -108,10 +270,103 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Section contact */
+#contact {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #555;
+}
+
 /* Pied de page */
 footer {
     text-align: center;
     margin-top: 30px;
     font-size: 1em;
     color: #777;
+}
+
+/* Section des détails */
+.details-projet {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre principal */
+.details-projet h2 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contenu principal */
+.details-contenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Texte de description */
+.details-texte {
+    flex: 1;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Image principale */
+.details-image img {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Galerie de gameplay */
+.details-galerie {
+    margin-top: 20px;
+}
+
+.details-galerie h3 {
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.galerie-images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.galerie-images img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galerie-images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+html {
+    scroll-behavior: smooth;
 }

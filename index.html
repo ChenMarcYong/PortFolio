@@ -23,43 +23,110 @@
     </header>
 
     <section id="accueil">
-        <h2>Bienvenue sur mon Portfolio</h2>
-        <p>Je suis un développeur passionné par la création de jeux vidéo et la programmation. Découvrez mes projets et compétences dans ces domaines.</p>
+        <div class="info-profil">
+            <h2>CHEN Marc-Yong</h2>
+            <p>Étudiant en M2 ISICG</p>
+            <p>Université de Limoges</p>
+        </div>
+        <div class="photo-profil">
+            <img src="data/Ma tronche/photo de profil portfolio2.jpg" alt="Ma photo">
+        </div>
     </section>
 
     <section id="projets">
         <h2>Mes Projets</h2>
-        
-        <div class="projet">
-            <h3>Space Invaders - Recréation avec Processing</h3>
-            <p>Dans ce projet, j'ai recréé le célèbre jeu **Space Invaders** en utilisant **Processing**, un environnement de programmation destiné à la création graphique et visuelle. Le jeu a été entièrement codé en Java, et il inclut les mécaniques de jeu classiques : un vaisseau qui se déplace horizontalement, des vagues d'envahisseurs qui descendent et tirent sur le joueur, ainsi que la possibilité de marquer des points et de gérer la progression des niveaux.</p>
-            <p>**Détails techniques** :
-                <ul>
-                    <li>Utilisation de **Processing** pour créer des graphiques 2D.</li>
-                    <li>Création des **sprites** (vaisseau, ennemis, projectiles) à partir de zéro en utilisant un logiciel de dessin vectoriel.</li>
-                    <li>Gestion des collisions et du déplacement à travers des fonctions simples et efficaces.</li>
-                    <li>Ajout d'effets sonores et d'animations pour améliorer l'immersion dans le jeu.</li>
-                </ul>
-            </p>
-            <a href="#">Voir le projet sur GitHub</a>
+
+        <!--<div class="description-cadre">
+            <div class="texte-description">
+                <h3>Space Invaders - Processing</h3>
+                <p>Une version recréée du célèbre jeu Space Invaders en utilisant Processing. Le jeu inclut des mécanismes classiques : déplacement du vaisseau, vagues d’ennemis, gestion des scores et progression.</p>
+            </div>
+            <div class="image-description">
+                <img src="data/JV/Space Invaders/accueil d'écran.png" alt="Capture d'écran de Space Invaders">
+            </div>
+        </div>
+
+        <div class="description-cadre">
+            <div class="texte-description">
+                <h3>Pinpin le sauveur - Unity</h3>
+                <p>Jeu 2D rogue-like dans lequel vous incarnez un pingouin dont le but est de sauver sa copine Pinepine, faite prisonnière par les terribles bonhommes de neige.</p>
+            </div>
+            <div class="image-description">
+                <img src="data/JV/Pinpin/Image_presentation_pinpin.png" alt="Capture d'écran de Pinpin">
+            </div>
+        </div> -->
+
+        <!--<div class="description-verticale">
+            <h3>Space Invaders - Processing</h3>
+            <p>Une version recréée du célèbre jeu Space Invaders en utilisant Processing. Le jeu inclut des mécanismes classiques : déplacement du vaisseau, vagues d’ennemis, gestion des scores et progression.</p>
+            <div class="image-description">
+                <img src="data\JV\Space Invaders\accueil d'écran.png" alt="Capture d'écran de Space Invaders">
+            </div>
         </div>
         
-        <div class="projet">
-            <h3>Penguin Defender - Jeu 2D Rogue-like sous Unity</h3>
-            <p>Dans ce projet, j'ai créé un jeu **2D Rogue-like** dans lequel le joueur incarne un **pingouin** courageux qui doit sauver la **banquise** envahie par de terribles **bonhommes de neige**. Le gameplay est basé sur la génération procédurale des niveaux, ce qui permet au joueur de vivre une expérience différente à chaque partie. Le but du jeu est de vaincre les bonhommes de neige et sauver les habitants de la banquise, tout en collectant des ressources et en améliorant ses capacités.</p>
-            <p>**Détails techniques** :
-                <ul>
-                    <li>Développement sous **Unity** avec **C#** pour la logique de jeu.</li>
-                    <li>Utilisation de la **génération procédurale** pour créer des niveaux uniques à chaque partie, avec des positions aléatoires des ennemis et des ressources.</li>
-                    <li>Création des **sprites** (pingouin, bonhommes de neige, objets) et animation du personnage principal et des ennemis.</li>
-                    <li>Implémentation d'un système de **combat au tour par tour**, avec des attaques de glace et des capacités spéciales à améliorer.</li>
-                    <li>Conception d'un système de **progression**, avec des niveaux de difficulté croissants et des ennemis de plus en plus forts à chaque étage de la banquise.</li>
-                    <li>Ajout d'un système de **score et de replayability**, où le joueur peut revenir pour battre son propre record.</li>
-                </ul>
-            </p>
-            <a href="#">Voir le projet sur GitHub</a>
-        </div>
+        <div class="description-verticale">
+            <h3>Pinpin le sauveur - Unity</h3>
+            <p>Jeu 2D rogue-like dans lequel vous incarnez un pingouin dont le but est de sauver sa copine Pinepine, faite prisonnière par les terribles bonhommes de neige.</p>
+            <div class="image-description">
+                <img src="data\JV\Pinpin\Image_presentation_pinpin.png" alt="Capture d'écran de Pinpin">
+            </div>
+        </div>-->
+
+
+        <div class="projets-ligne">
+            <!-- Projet Space Invaders -->
+            <div class="projet-card">
+                <h3>Space Invaders - Processing</h3>
+                <p>Une version recréée du célèbre jeu Space Invaders. Le jeu inclut des mécaniques classiques : déplacement du vaisseau, vagues d’ennemis par niveau, gestion des scores et progression.</p>
+                <!-- Lien vers la section détails -->
+                <a href="#details-space-invaders">
+                    <img src="data/JV/Space Invaders/image présentation.png" alt="Capture d'écran de Space Invaders">
+                </a>
+            </div>
         
+            <!-- Projet Pinpin le Sauveur -->
+            <div class="projet-card">
+                <h3>Pinpin le Sauveur - Unity</h3>
+                <p>Jeu 2D rogue-like dans lequel vous incarnez un pingouin dont le but est de sauver sa copine Pinepine, faite prisonnière par les terribles bonhommes de neige.</p>
+                <!-- Lien vers la section détails -->
+                <a href="#details-pinpin">
+                    <img src="data/JV/Pinpin/Image_presentation_pinpin.png" alt="Capture d'écran de Pinpin">
+                </a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Details des projets -->
+        <section id="details-space-invaders" class="details-projet">
+            <h2>Space Invaders - Détails</h2>
+            <div class="details-contenu">
+                <div class="details-texte">
+                    <h3>Présentation</h3>
+                    <p>Space Invaders est une recréation du célèbre jeu d'arcade en utilisant Processing. Le jeu propose :</p>
+                    <ul>
+                        <li>Déplacement du vaisseau avec des contrôles fluides.</li>
+                        <li>Vagues d’ennemis progressives et de plus en plus difficiles.</li>
+                        <li>Gestion des scores pour suivre votre progression.</li>
+                        <li>Graphismes rétro rappelant l'expérience classique des années 80.</li>
+                    </ul>
+                </div>
+                <div class="details-image">
+                    <img src="data/JV/Space Invaders/image présentation.png" alt="Capture d'écran de Space Invaders">
+                </div>
+            </div>
+            <div class="details-galerie">
+                <h3>Galerie de Gameplay</h3>
+                <div class="galerie-images">
+                    <img src="data/JV/Space Invaders/level1.png" alt="Niveau 1 de Space Invaders">
+                    <img src="data/JV/Space Invaders/level2.png" alt="Niveau 2 de Space Invaders">
+                    <img src="data/JV/Space Invaders/level3.png" alt="Niveau 3 de Space Invaders">
+                </div>
+            </div>
+        </section>
+
+    <section id="details-pinpin">
+        <h2>Pinpin le Sauveur - Détails</h2>
+        <p>Jeu 2D rogue-like où vous incarnez un pingouin courageux sauvant sa banquise...</p>
     </section>
 
     <section id="competences">
